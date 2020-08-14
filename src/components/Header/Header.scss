@@ -1,0 +1,11 @@
+$marginRight : 0px!important;
+$navbarColor : #002748!important;
+
+
+.navbar{
+  background-color: $navbarColor;
+}
+
+.navbar-brand{
+  margin-right: $marginRight;
+}

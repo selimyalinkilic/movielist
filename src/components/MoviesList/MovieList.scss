@@ -1,0 +1,17 @@
+$max-width: 767px;
+
+.movieListHeader, .movieListContent{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: $max-width){
+    width: 98%;
+  }
+}
+
+.movie-title{
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,16 @@
+.movieDet{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  .movieDetRow{
+    display: flex;
+    margin-top: 30px;
+    .movieDetCol{
+      &:first-child{
+        margin-right: 15px;
+      }
+    }
+  }
+}
