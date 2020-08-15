@@ -22,7 +22,6 @@ class MovieList extends Component {
         movies : underscore.chunk(sortBy(this.props.movies, 'Year'), 5),
         pageCount : Math.ceil(this.props.movies.length / this.state.perPageData)
       })
-      console.log(this.state.data)
     }, 1500);
   }
 
@@ -38,7 +37,7 @@ class MovieList extends Component {
     for (let i = 1; i <= this.state.pageCount; i++){      
       pageItems.push(
         <li className={i === currentPage+1 ? 'page-item active' : 'page-item'} >
-          <a className="page-link" href="#" id={i} onClick={this.handlePageClick}>{i}</a>
+          <a className="page-link" href={() => false} id={i} onClick={this.handlePageClick}>{i}</a>
         </li>
       )
     }
