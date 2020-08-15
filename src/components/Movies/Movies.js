@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-
+import {Helmet} from "react-helmet";
 import Search from '../Search/Search';
 import MoviesList from '../MoviesList/MovieList';
 
@@ -38,6 +38,9 @@ const Movies = () => {
   }
   return (
     <div className="moviesContent">
+      <Helmet>
+        <title>OMDB API & React App</title>
+      </Helmet>
       <Search search={search} />
       {
         loading && !errorMessage ? (

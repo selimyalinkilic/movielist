@@ -8,14 +8,9 @@ const Search = (search) => {
     setSearchVal(e.target.value);
   }
 
-  const resetInputField = () => {
-    setSearchVal("")
-  }
-
   const callSearchFunction = (e) => {
     e.preventDefault();
     search.search(searchVal);
-    resetInputField();
   }
 
   return (

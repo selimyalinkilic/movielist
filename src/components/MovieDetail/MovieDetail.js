@@ -4,6 +4,7 @@ import moment from 'moment';
 import 'moment/locale/tr';
 
 import './MovieDetail.scss';
+import {Helmet} from "react-helmet";
 
 class MovieDetail extends Component {
   constructor(props){
@@ -24,6 +25,9 @@ class MovieDetail extends Component {
     const { movie } = this.state;
     return (
       <div className="container">
+        <Helmet>
+          <title>{ !movie.Title ? 'OMDB API & React App' : `Movie : ${movie.Title}` }</title>
+        </Helmet>
         { 
           !movie.Title ? 
           <div className="movieDet">

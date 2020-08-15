@@ -76,7 +76,7 @@ class MovieList extends Component {
         </div>
       </div>
       <nav className="mt-5">
-        <ul className="pagination pagination-lg">
+        <ul className="pagination pagination-md">
           {
             pageItems
           }
