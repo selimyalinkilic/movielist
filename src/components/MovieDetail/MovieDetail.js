@@ -63,27 +63,27 @@ class MovieDetail extends Component {
             </div>
             <div className="movieDetRow">
               <div className="movieDetCol">Yayınlanma Tarihi : </div>
-              <div className="movieDetCol">{moment(movie.Released).format('LL')}</div>
+              <div className="movieDetCol">{movie.Released !== 'N/A' ? moment(movie.Released).format('LL') : '-'}</div>
             </div>
             <div className="movieDetRow">
               <div className="movieDetCol">Süre : </div>
-              <div className="movieDetCol">{ movie.Runtime }</div>
+              <div className="movieDetCol">{ movie.Runtime !== 'N/A' ? movie.Runtime : '-' }</div>
             </div>
             <div className="movieDetRow">
               <div className="movieDetCol">Tür : </div>
-              <div className="movieDetCol">{movie.Genre}</div>
+              <div className="movieDetCol">{movie.Genre !== 'N/A' ? movie.Genre : '-'}</div>
             </div>
             <div className="movieDetRow">
               <div className="movieDetCol">Yönetmen : </div>
-              <div className="movieDetCol">{movie.Director}</div>
+              <div className="movieDetCol">{movie.Director !== 'N/A' ? movie.Director : '-'}</div>
             </div>
             <div className="movieDetRow">
               <div className="movieDetCol">Oyuncular : </div>
-              <div className="movieDetCol">{movie.Actors}</div>
+              <div className="movieDetCol">{movie.Actors !== 'N/A' ? movie.Actors : '-'}</div>
             </div>
             <div className="movieDetRow">
               <div className="movieDetCol">IMDB Puanı : </div>
-              <div className="movieDetCol">{movie.imdbRating}</div>
+              <div className="movieDetCol">{movie.imdbRating !== 'N/A' ? movie.imdbRating : '-'}</div>
             </div>
           </div>
         }
