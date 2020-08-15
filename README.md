@@ -2,7 +2,7 @@
 
   **Demo**
 
-  - [movielist-three.vercel.app](movielist-three.vercel.app)
+  - [movielist-three.vercel.app](https://movielist-three.vercel.app)
 
 ## 🚀 Quick start
 
@@ -25,8 +25,3 @@
 3. **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:3000`!
-
-
-## License
-
-This project is released under the [MIT License](LICENSE).
