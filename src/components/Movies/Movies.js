@@ -50,7 +50,11 @@ const Movies = () => {
             </div>
           </div>
         ) : errorMessage ? (
-          <div className="errorMessage">{errorMessage}</div>
+          <div className="w-100 d-flex justify-content-center mt-5">
+            <div class="alert alert-primary w-50 text-center" role="alert">
+              {errorMessage}
+            </div>
+          </div>
         ) : (
           <MoviesList movies={movies} />
         )

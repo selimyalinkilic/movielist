@@ -10,16 +10,16 @@ class MovieDetail extends Component {
   constructor(props){
     super(props);
     this.state = {
-      movie : []
+      movie : [] // movie adına state oluşturuldu
     }
   }
   componentDidMount(){
     setTimeout(() => {
       this.setState({
-        movie : this.props.movie
+        movie : this.props.movie // propstan gelen movie datası movie state'ine set edildi
       })
-    }, 1500);
-    moment.locale('tr');
+    }, 1500); // Component ilk yüklendiğinde data gelmiyordu bu yüzden settimeout komutuyla dataları set edildi
+    moment.locale('tr'); // moment js dilini tr ye çevrildi.
   }
   render() {
     const { movie } = this.state;

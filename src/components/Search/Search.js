@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './Search.scss'
 
 const Search = (search) => {
-  const [searchVal, setSearchVal] = useState("");
+  const [searchVal, setSearchVal] = useState(""); 
 
   const handleSearchInputChanges = (e) => {
     setSearchVal(e.target.value);
