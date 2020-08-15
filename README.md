@@ -2,7 +2,7 @@
 
   **Demo**
 
-  - [Demo](movielist-three.vercel.app)
+  - [movielist-three.vercel.app](movielist-three.vercel.app)
 
 1. **Clone Repo**
 
