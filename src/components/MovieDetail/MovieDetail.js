@@ -59,7 +59,7 @@ class MovieDetail extends Component {
           <div className="movieDet" key={movie.imdbID}>
             <h3 className="movieTitle">{movie.Title}</h3>
             <div className="movieDetRow">
-              <img src={movie.Poster} className="moviePoster"  alt={movie.Title} />
+              <img src={movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/300x445'} className="moviePoster"  alt={movie.Title} />
             </div>
             <div className="movieDetRow">
               <div className="movieDetCol">Yayınlanma Tarihi : </div>
