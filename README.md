@@ -4,6 +4,8 @@
 
   - [movielist-three.vercel.app](movielist-three.vercel.app)
 
+## 🚀 Quick start
+
 1. **Clone Repo**
 
   ```shell
@@ -25,3 +27,6 @@
     Your site is now running at `http://localhost:3000`!
 
 
+## License
+
+This project is released under the [MIT License](LICENSE).
