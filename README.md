@@ -2,7 +2,7 @@
 
   **Demo**
 
-  - movielist-three.vercel.app 
+  - [movielist-three.vercel.app](movielist-three.vercel.app)
 
 ## 🚀 Quick start
 
